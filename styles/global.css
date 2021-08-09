@@ -17,7 +17,7 @@ html{
     --blue: #3485ff;
     --background: #f6faff;
     --overlay: #040911;
-    --icons-details: #a5b0c1;
+    --icon-details: #a5b0c1;
 
     /* Greys */
     --grey-dark: #4d5e77;
@@ -31,11 +31,10 @@ html{
 }
 
 body{
+    display: flex;
     height: 100vh;
-    width: 100vw;
-    /* background: var(--background);
-    background-image: url(../assets/images/home-bg-img.svg )  ;
-    background-repeat: no-repeat; */
+    background: var(--background);
+    
 }
 
 body, button, input, textarea{
@@ -57,11 +56,12 @@ body, button, input, textarea{
 
 .content header{
     width: 80%;
+    margin: 3.5rem auto;
 }
 
 .content header img{
-    width: 16.7rem;
-    margin: 3.5rem auto;
+    width: 16.7rem;   
+   
 }
 
 /* screen only */
@@ -92,9 +92,12 @@ button, .button{
     font-weight: 500;
     line-height: 0;
     background: var(--blue) ;
+
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: var(--white);
     cursor: pointer;
     transition: filter .2s ease;
