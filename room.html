@@ -9,6 +9,7 @@
     <!-- CSS Styles-->
     <link rel="stylesheet" href="styles/global.css" type="text/css" />
     <link rel="stylesheet" href="styles/room.css" type="text/css" />
+    <link rel="stylesheet" href="styles/modal.css" type="text/css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,7 +66,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="assets/images/Avatar.svg" alt="">
+                                <img src="assets/images/user-shape.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const, let e var no javascript</p>
@@ -85,9 +86,104 @@
 
                         </div>
                     </div>
+
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/images/user-shape.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>O que é Javascript?</p>
+
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/images/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#"class="delete">
+                                <img src="assets/images/trash.svg" alt="Excluir">
+                                Excluir
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/images/user-shape.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>O que você deseja alcançar no seu futuro como programador? Você já tem a base necessária para chegar aonde almeja?
+                                    Se sim, o que você tem estudado, você diria que está no caminho certo para chegar onde você quer?
+                                E mesmo tendo essa base, quais as suas maiores dificuldades? </p>
+
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/images/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#"class="delete">
+                                <img src="assets/images/trash.svg" alt="Excluir">
+                                Excluir
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="assets/images/user-shape.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>O que é Typescript</p>
+
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="assets/images/check.svg" alt="Marcar como lida">
+                                Pergunta lida
+                            </a>
+                           
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+    </div>
+
+
+    <!--  MODAL AREA -->
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir Pergunta</h2>
+            <p>Tem certeza que você desja excluir esta pergunta?</p>
+
+            <form action="#">
+                <label for="password" class="sr-only" for-id="password" >Digite a senha da sala </label>
+                <input type="password" name="password" id="password" placeholder="Digite a senha da sala">
+
+                <div class="buttons">
+                    <div class="button grey">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+
+            </form>
+        </div>
+
     </div>
     
 </body>
